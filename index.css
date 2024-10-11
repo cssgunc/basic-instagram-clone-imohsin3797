@@ -1,1 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #e7e7e7;
+}
+
+header.main-header {
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px 250px;
+    display: flex;
+    justify-content: space-between; /* Ensures equal spacing between elements */
+    align-items: center;
+    gap: 20px; /* Optional: Adds spacing between items if needed */
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .logo img {
+    max-width: 100px; /* Adjust the width of the logo */
+    height: auto;
+    object-fit: contain; /* Ensures the image scales proportionally to fit within the box */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #bababa;
+    overflow: hidden;
+    width: 175px;
+    max-width: 100%;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.search-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-between; /* Space the icons evenly */
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0; /* Remove extra padding */
+    width: 150px; /* Adjust width based on the number of icons */
+    margin: 0; /* Align it inline with other header elements */
+}
+
+.icon-container i {
+    font-size: 20px; /* Size of the icons */
+    color: #939393; /* Default color for icons */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+footer.main-footer {
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.profile-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 98px 20px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 30px;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.username {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.edit-btn {
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    max-width: 75%;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.bio {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.bio a {
+    color: #00376b;
+    text-decoration: none;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+.stats p {
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.photo {
+    width: 100%;
+    padding-top: 100%; /* Makes the div square */
+    position: relative;
+    overflow: hidden;
+}
+
+.photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
